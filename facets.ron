@@ -1,0 +1,84 @@
+ (
+    facets: [
+        (
+            name: "Setting",
+            enabled: true,
+            items: [
+               "A bustling medieval marketplace",
+               "A deserted island in the Pacific",
+               "A futuristic city with flying cars",
+               "A small town in the American Midwest during a harsh winter",
+               "A haunted Victorian mansion at midnight",
+               "The depths of a dense, unexplored jungle",
+               "A distant planet with strange flora and fauna",
+               "A secret underground laboratory",
+               "An ancient pyramid hidden in the Egyptian desert",
+               "A spaceship traveling to a newly discovered galaxy"
+            ]
+        ),
+        (
+            name: "Main Character",
+            enabled: true,
+            items: [
+                "A retired pirate searching for peace",
+                "A young wizard far from home",
+                "A robot with newfound emotions",
+                "An ambitious chef with a mysterious past",
+                "A detective with a fear of the dark",
+                "A rebellious teenager with the ability to see the future",
+                "A lost astronaut trying to find their way back to Earth",
+                "An orphaned prince seeking to reclaim his throne",
+                "A scientist who discovers a portal to another dimension",
+                "A journalist on the trail of a massive conspiracy"
+            ],
+        ),
+        (
+            name: "Conflict",
+            enabled: true,
+            items: [
+                "Must overthrow a corrupt government",
+                "Faces a moral dilemma that could change their life",
+                "Trapped in a time loop",
+                "Competes in a dangerous and secretive competition",
+                "Struggles to survive in a post-apocalyptic world",
+                "Fights against a powerful and unseen enemy",
+                "Races to solve a centuries-old mystery",
+                "Defends their home from invading forces",
+                "Seeks revenge against a formidable foe",
+                "Must save someone they love from a terrible fate"
+            ],
+        ),
+        (
+            name: "Theme",
+            enabled: true,
+            items: [
+                "The cost of ambition",
+                "Friendship in unexpected places",
+                "The power of forgiveness",
+                "Overcoming fears to find inner strength",
+                "The impact of technology on society",
+                "The quest for identity and self-discovery",
+                "The consequences of greed",
+                "The struggle between duty and desire",
+                "The fragility of peace",
+                "The nature of truth and deception"
+            ],
+        ),
+        (
+            name: "Genre",
+            enabled: true,
+            items: [
+                "Fantasy adventure",
+                "Science fiction thriller",
+                "Historical drama",
+                "Romantic comedy",
+                "Horror and suspense",
+                "Mystery and detective",
+                "War and military fiction",
+                "Supernatural and paranormal",
+                "Dystopian and post-apocalyptic",
+                "Cyberpunk and tech-noir"
+            ],
+        ),
+    ],
+)
