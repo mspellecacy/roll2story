@@ -1,6 +1,15 @@
  (
     facets: [
         (
+            name: "Example Facet Entry",
+            enabled: false,
+            items: [
+                "item1",
+                "item2",
+                "item3",
+            ]
+        ),
+        (
             name: "Setting",
             enabled: true,
             items: [
@@ -79,6 +88,86 @@
                 "Dystopian and post-apocalyptic",
                 "Cyberpunk and tech-noir"
             ],
+        ),
+        (
+            name: "Plot Twist",
+            enabled: false,
+            items: [
+                "The main character discovers they are related to the antagonist",
+                "A long-lost sibling returns with shocking news",
+                "It was all a simulation or dream",
+                "A supposed ally betrays the main character at a critical moment",
+                "An unexpected natural disaster changes everything",
+                "The main character loses their memory",
+                "The villain switches sides",
+                "A secret society is revealed to be pulling the strings",
+                "A prophecy is found that changes the stakes",
+                "The main character was the villain all along"
+            ]
+        ),
+        (
+            name: "Secondary Character",
+            enabled: true,
+            items: [
+                "A wise-cracking street vendor with a heart of gold",
+                "An elderly scientist who holds the key to a mystery",
+                "A loyal pet with unusual abilities",
+                "A ghost seeking to right a past wrong",
+                "A ruthless mercenary with a strict code of honor",
+                "A charming thief with hidden depths",
+                "A child prophet who speaks in riddles",
+                "An alien with misunderstood intentions",
+                "A rebellious artificial intelligence",
+                "A cursed knight doomed to eternal wander"
+            ]
+        ),
+        (
+            name: "World Feature",
+            enabled: true,
+            items: [
+                "Floating islands",
+                "Eternal night due to a celestial event",
+                "Cities built entirely underwater",
+                "Volcanic landscapes with rare minerals",
+                "An impenetrable fog that affects memory",
+                "Wildlife that evolves rapidly",
+                "A world with two suns",
+                "Ever-shifting terrain",
+                "Plants that emit light and sound",
+                "Ruins of an ancient advanced civilization"
+            ]
+        ),
+        (
+            name: "Emotional Mood",
+            enabled: true,
+            items: [
+                "Melancholy and introspective",
+                "Joyful and energetic",
+                "Tense and suspenseful",
+                "Romantic and wistful",
+                "Fearful and paranoid",
+                "Optimistic and hopeful",
+                "Mysterious and enigmatic",
+                "Angry and tumultuous",
+                "Sorrowful and mournful",
+                "Whimsical and surreal"
+            ]
+        ),
+        (
+            name: "Technology or Magic",
+            enabled: true,
+            items: [
+                "Time travel devices",
+                "Mind-reading technology",
+                "Magic that controls the elements",
+                "Cybernetic enhancements for humans",
+                "Potions that alter reality",
+                "Ancient runes with forbidden powers",
+                "AI that can predict the future",
+                "Magical creatures that bond with humans",
+                "Steampunk gadgets that defy physics",
+                "Bioengineering that creates hybrids"
+            ]
         ),
     ],
 )
