@@ -3,6 +3,7 @@ use rand::{thread_rng, Rng};
 use ron::de::from_reader;
 use serde::{Deserialize, Serialize};
 use std::env;
+use std::fmt::{Display, Formatter};
 use std::fs::File;
 use std::path::Path;
 
@@ -39,6 +40,12 @@ struct StoryFacetResult {
     facet_item: String,
 }
 
+impl Display for StoryFacetResult {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{} - {}", self.facet_name, self.facet_item)
+    }
+}
+
 fn get_story_facet(facet: &StoryFacet, rng: &mut ThreadRng) -> StoryFacetResult {
     let random_item_index: usize = rng.gen_range(0..facet.items.len());
     let facet_name = facet.name.clone();
@@ -57,28 +64,21 @@ fn main() {
     let facets_file = File::open(config_path).expect("Missing 'facets.ron' config file");
     let config: Config = match from_reader(facets_file) {
         Ok(c) => c,
-        Err(e) => panic!("Failed to load config: {}", e),
+        Err(e) => panic!("Failed to load config: {e}"),
     };
 
     if args.contains(&"debug".to_string()) {
         println!(
-            "Config: \n {}",
+            "Config:\n{}",
             ron::ser::to_string_pretty(&config, ron::ser::PrettyConfig::default()).unwrap(),
         );
     }
 
     fn do_facets(facets: &Vec<StoryFacet>) {
-        let mut rng = thread_rng();
         facets
             .iter()
             .filter(|f| f.enabled)
-            .map(|f| {
-                let story_facet_result = get_story_facet(&f, &mut rng);
-                format!(
-                    "{} \n {}",
-                    story_facet_result.facet_name, story_facet_result.facet_item
-                )
-            })
+            .map(|f| get_story_facet(&f, &mut thread_rng()))
             .map(|f| println!("{f}"))
             .collect()
     }
@@ -87,7 +87,7 @@ fn main() {
     while _continue_.trim() != "n" {
         _continue_.clear();
 
-        println! {"-----"};
+        println! {"roll4story\n-----"};
         do_facets(&config.facets);
         println! {"-----"};
 
